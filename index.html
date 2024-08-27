@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-center my-4">
+        <h1>Encriptador y Desencriptador de Texto</h1>
+    </header>
+    <main class="container">
+        <div class="row textarea-container">
+            <div class="col-12 col-md-6 mb-3">
+                <textarea id="inputText" class="form-control" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <textarea id="outputText" class="form-control" placeholder="Resultado" readonly></textarea>
+            </div>
+        </div>
+        <div class="row button-container">
+            <div class="col-12 col-md-4 mb-3">
+                <button class="btn btn-primary btn-block" onclick="encryptText()">ENCRIPTAR</button>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <button class="btn btn-secondary btn-block" onclick="copyText()">COPIAR</button>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <button class="btn btn-success btn-block" onclick="decryptText()">DESENCRIPTAR</button>
+            </div>
+        </div>
+        <div id="validationMessage" class="text-danger text-center"></div>
+    </main>
+    <footer class="text-center mt-4">
+        <!-- Aquí puedes agregar contenido del pie de página -->
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
